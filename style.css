@@ -1,3 +1,4 @@
+
 /* Reset default browser spacing */
 body {
     margin: 0;
@@ -62,3 +63,68 @@ footer {
     
 }
      
+/* Reset default browser spacing */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f2eb;
+}
+
+/* Header */
+header {
+    background-color: #52665a;
+    color: #f5f2eb;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: #d8cab8;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #52665a;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+    background-color: #f5f2eb;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Products */
+.product {
+    margin: 10px 0;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #e3d7c1;
+}
+
+/* Footer */
+footer {
+    background-color: #52665a;
+    color: #f5f2eb;
+    text-align: center;
+    padding: 10px;
+    
+}
+     
+
