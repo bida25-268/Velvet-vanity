@@ -44,8 +44,12 @@
                     <li class="nav-item"> 
 
                         <a class="nav-link" href="contact.html">Contact</a> 
-
+                    
                     </li> 
+                    <li class="nav-item"> 
+                        
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
 
                 </ul> 
 
@@ -57,8 +61,46 @@
 
 </header> 
         <main class="container my-5">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or would like to get in touch, please feel free to contact me at <a href="mailto:bida25-268@thuto.bac.ac.bw">bida25-268@thuto.bac.ac.bw</a></p>
+            <h1 style="color:#b30059; text-align:center;">📬 Contact Us</h1>
+
+<div style="max-width:600px; margin:auto; text-align:left; font-family:Arial, sans-serif; line-height:1.6;">
+
+  <p style="font-size:18px; color:#333;">
+    We’d love to hear from you! Whether you have a question, feedback, or just want to say hello, drop us a message below and we’ll get back to you as soon as possible. 💖
+  </p>
+
+  <form id="contactForm" onsubmit="sendMessage(event)" style="display:flex; flex-direction:column; gap:10px;">
+
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" required style="padding:8px; border-radius:5px; border:1px solid #ccc;">
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" required style="padding:8px; border-radius:5px; border:1px solid #ccc;">
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" required rows="5" style="padding:8px; border-radius:5px; border:1px solid #ccc;"></textarea>
+
+    <button type="submit" style="background:#b30059; color:white; padding:10px; border:none; border-radius:5px; cursor:pointer;">Send Message</button>
+
+  </form>
+
+</div>
+
+<script>
+function sendMessage(event){
+  event.preventDefault();
+  
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  alert(`Thank you, ${name}! 💖\n\nYour message has been received:\n"${message}"\n\nWe will reply to ${email} soon.`);
+  
+  // Clear the form
+  document.getElementById('contactForm').reset();
+}
+</script>
+
         </main>
         
         <footer>
